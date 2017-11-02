@@ -28,3 +28,12 @@ words_def = {:travel => "to go places", :war => "to battle", :paint => "art usin
 fav_movies = {:superbad => "2005", :avengers => "2010", :x_men => "2001"}
 cities_pop = {:toronto => "3500000", :houston => "4000000", :boston => "10000000"}
 siblings = {:roy => "32", :carter => "15", :anthony => "29"}
+
+
+# Exercise 1
+
+print coin_flip
+print fav_colours[0]
+print siblings.sort
+siblings[:baby] ="0"
+puts fav_movies[:avengers]
