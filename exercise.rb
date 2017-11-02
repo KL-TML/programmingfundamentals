@@ -37,3 +37,13 @@ print fav_colours[0]
 print siblings.sort
 siblings[:baby] ="0"
 puts fav_movies[:avengers]
+
+# Exercise 2
+
+print fav_colours[3]
+cities_pop[:seattle] = 7000000
+coin_flip.reverse!
+print cities_pop[:toronto]
+artists.each do |artist|
+  puts "I think #{artist} is great."
+end
