@@ -265,4 +265,20 @@ end
 print countries_island
 print countries_not_island
 
+puts "============"
+
 # Exercise 8
+expenses = []
+expenses = [250, 7.95, 30.95, 16.50]
+puts expenses
+
+puts "============"
+
+total_expenses = 0
+expenses.each do |expense|
+  total_expenses += expense
+end
+puts total_expenses
+puts "============"
+
+# Exercise 9
