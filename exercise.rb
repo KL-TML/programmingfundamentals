@@ -12,7 +12,7 @@
 
 
 fav_colours = ["blue", "green", "yellow", "red"]
-age_family_friends = ["1","2","3","4"]
+age_family_friends = ["1", "2", "3", "4"]
 coin_flip = ["heads", "tails", "heads", "tails", "tails"]
 artists = ["katy perry", "taylor swift", "2 chainz"]
 fav_colours = [:blue, :green, :yellow, :red]
@@ -91,3 +91,178 @@ print artists[1]
   puts "============"
 
   # Ex4 Q3
+  puts "============"
+  puts coin_flip.each.count {|flip_coin| flip_coin == "heads"}
+  puts "============"
+
+  # Ex4 Q5
+
+  # cities_pop do |number, total|
+  #   total = total + number
+  # end
+  # puts
+
+  puts "============"
+  cities_pop[:toronto] = "8400000"
+  puts cities_pop
+  puts "============"
+
+
+
+
+  # Exercise 5
+
+  # Ex 5 Q1
+  puts "============"
+
+  total_population = 0
+
+  cities_pop.each do |name, population|
+    # puts population
+    total_population = total_population + population.to_i
+  end
+
+  puts total_population
+
+
+# PROBLEM:
+# GIVEN A COLLECTION OF CITIES AND THEIR POPULATIONS, ADD THE POPULATIONS AND RETURN THE RESULT AS A NUMBER
+
+# SOLUTION/APPROACH
+# ---
+# DEFINE A VARIABLE TO STORE THE TOTAL POPULATION
+# LOOP OVER THE COLLECTION OF CITIES/POPULATIONS
+  # FOR EACH CITY/POPULATION, ADD THE POPULATION TO THE TOTAL.
+# WHEN THE LOOP IS COMPLETE, PRINT THE TOTAL
+
+puts "============"
+
+# Ex5 Q2
+siblings.each do |name, age|
+  if age > "30"
+    puts "#{name} is old"
+
+  else age < "30"
+    puts "#{name} is young"
+
+  end
+end
+
+puts "============"
+
+
+# Ex5 Q3
+puts fav_colours[-2..-1]
+puts "============"
+
+# Ex 5 Q4
+age_family_friends.each do |age|
+
+  puts "#{age.to_i + 1}"
+end
+
+puts "============"
+
+# Ex5 Q5
+fav_colours << "pink"
+fav_colours << "purple"
+puts fav_colours
+
+puts "============"
+
+
+# Exercise 6
+# Ex6 Q1
+movies_by_year = {
+  1999 => ["The Matrix", "Star Wars: Episode I", "The Mummy"],
+  2009 => ["Avatar", "Star Trek", "District 9"],
+  2019 => ["How to Train Your Dragon 3", "Toy Story 4", "Star Wars: Episode 9"]
+}
+
+puts "============"
+
+# Ex6 Q2
+phone_buttons = [
+  ["1", "2", "3"],
+  ["4", "5", "6"],
+  ["7", "8", "9"],
+  ["*", "0"]
+]
+puts "============"
+
+
+# Part 3
+countries = [
+  {:name => "Canada",
+   :continent => "North America",
+   :island => false},
+
+  {:name => "Mexico",
+   :continent => "North America",
+   :island => false},
+
+  {:name => "Iceland",
+   :continent => "Europe",
+   :island => true}
+    ]
+    puts "============"
+
+
+# Exercise 7
+  # Ex7 Q1
+
+  20.times do
+    puts "I will not skateboard in the halls"
+  end
+  puts "============"
+
+  # Ex7 Q2
+  skateboard_halls = []
+  20.times do
+    skateboard_halls.push "I will not skateboard in the halls"
+  end
+
+  puts skateboard_halls
+
+  puts "============"
+
+  # Ex7 Q3
+numbers = (1..50).to_a
+
+puts "============"
+
+  # Ex7 Q4
+number_sum = 0
+numbers.each do |number|
+  number_sum += number
+end
+  puts number_sum
+puts "============"
+
+# Ex7 Q5
+triple_number = []
+
+numbers.each do |number|
+  3.times do
+    triple_number << number
+  end
+end
+
+puts triple_number
+
+# Ex7 Q6
+countries_island = []
+countries_not_island = []
+
+countries.each do |country|
+  if country[:island] == false
+    countries_not_island << country[:name]
+  else
+    countries_island << country[:name]
+  end
+end
+
+print countries_island
+print countries_not_island
+
+# Exercise 8
