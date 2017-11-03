@@ -267,7 +267,7 @@ print countries_not_island
 
 puts "============"
 
-# Exercise 8
+# Exercise 7
 expenses = []
 expenses = [250, 7.95, 30.95, 16.50]
 puts expenses
@@ -281,4 +281,41 @@ end
 puts total_expenses
 puts "============"
 
-# Exercise 9
+# Exercise 8
+
+grocery_list = ["carrots", "toilet paper", "apples", "salmon"]
+def add_grocery_item(grocery_list, item)
+  grocery_list.each do |item|
+    puts "* #{item}"
+  end
+end
+# add_grocery_item(grocery_list)
+grocery_list << "rice"
+grocery_list << "bread"
+add_grocery_item(grocery_list)
+# puts a.length
+puts grocery_list
+
+
+if grocery_list "bananas"
+  puts "You need to pick up bananas"
+else
+  puts "You don't need to pick up bananas today"
+end
+
+puts grocery_list
+
+uts grocery_list_update.sort
+
+grocery_list.delete("salmon")
+print grocery_list
+
+
+
+
+puts "============"
+
+
+# grocery_item = "rice"
+# grocery_item = "bananas"
+print grocery_list
